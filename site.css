@@ -4,37 +4,53 @@
 .th-search--location--desktop-header .th-search__button--search{
 	position:relative;
 }
+.th-block-finder__header{
+	display:none;
 
+}
 .th-block-finder{
 	height:100%;
 	background:#fff;
 }
 .th-vehicle-select--location--block-finder .th-vehicle-select__item{
-	height:55px;
+	height:50px;
 }
 .th-vehicle-select--location--block-finder{
-	--th-vehicle-select__item-title--line-height: 5px;
+	--th-vehicle-select__item-title--line-height:1px;
 }
 .th-vehicle-select__item{
-	  min-width: 0;
     border: 2px solid #aaa;
-    position: relative;
 	border-radius:10px;
 	margin:2px;
+}
+.th-vehicle-select--location--block-finder .th-vehicle-select__item+.th-vehicle-select__item{
+	border: 2px solid #aaa;
 }
 
 .th-block-finder__button{
 	border-radius: 10px;
-   margin: 5px;
+	margin-top:2px;
+			margin-bottom:2px;
+	margin-left:2px;
+
 }
+
 .th-block-slideshow .owl-item .th-block-slideshow__item-image{
 		border-radius: 10px;
 
 }
+.th-block-slideshow__item{
+	height:388px
+}
+.th-block-slideshow .owl-item .th-block-slideshow__item-image{
+	height:350px;
+}
+.th-block-slideshow__carousel .owl-carousel button.owl-dot:before{
+	width:8px;
+	height:8px;
+	margin:2px
+}
 
  .th-products-list[data-layout=grid] .th-products-list__filler, .th-products-list[data-layout=grid] .th-products-list__item{
 	margin: calc(var(--th-products-list--gutter) / 10);
-}
-.th-block-slideshow .owl-item .th-block-slideshow__item-image{
-	height:auto;
 }
